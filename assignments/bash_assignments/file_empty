@@ -1,0 +1,12 @@
+#! /bin/bash
+# check file is empty or not
+
+echo -e "Enter the file name = \c"
+read file
+
+if [ -s $file ]
+then
+    echo " file is not empty"
+    else 
+    echo " file is empty"
+fi

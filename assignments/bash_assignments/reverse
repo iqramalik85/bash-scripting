@@ -1,0 +1,14 @@
+#! /bin/bash
+
+read -p "Enter a number to reverse: " num
+
+rev_num=0
+
+while [ $num -gt 0 ]
+ do
+    remainder=$((num % 10))
+    rev_num=$((rev_num * 10 + remainder))
+    num=$((num / 10))
+done
+
+echo "Reversed number: $rev_num"

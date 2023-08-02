@@ -1,0 +1,11 @@
+#! /bin/bash
+# finding number of directories
+
+for dir in *
+do 
+    if [ -e $dir ]
+    then
+    echo $dir
+    fi
+     
+done
