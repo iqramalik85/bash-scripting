@@ -3,10 +3,8 @@
 
 
 
-echo -e " Enter the First number \c: $num1 "
-read num1
-echo -e " Enter the secend number \c: $num2 "
-read num2
+read -p " Enter the First number : " num1 
+read -p " Enter the secend number : " num2
 
 
 echo "$num1 + $num2" | bc
